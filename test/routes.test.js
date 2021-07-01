@@ -21,8 +21,7 @@ describe('GET /list', () => {
       .expect(200)
       .expect('Content-Type', /json/)
       .then(response => {
-        // console.log(response.body.data);
-        assert(response.body.data.length, 3)
+        assert(response.body.status, 'success')
         done();
       })
       .catch(err => done(err));
