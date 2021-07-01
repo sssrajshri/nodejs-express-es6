@@ -1,8 +1,13 @@
+/**
+* @file It will contain all utility function, which will interact with external API endpoints
+* @author Shri 
+*/
+
 import async from 'async';
 import axios from 'axios';
 /**
- * 
- * @param {Array} endpoints 
+ * This function will interact with external api endpoints 
+ * @param {Array} endpoints - List of URL to fetch data
  * @returns Promise
  */
 const fetchAllUrl = (endpoints) => {
